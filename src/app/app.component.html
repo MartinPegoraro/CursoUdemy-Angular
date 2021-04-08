@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <ul>
+    <li>
+      <a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre mi</a>
+    </li>
+    <li>
+      <a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a>
+    </li>
+
+    <li id ="logo">
+      <a href="#">MP</a>
+    </li>
+
+    <li>
+      <a [routerLink]="['/crear-contacto']" [routerLinkActive]="['actived']">Crear proyectos</a>
+    </li>
+    <li>
+      <a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contacto</a>
+    </li>
+  </ul>
+</header>
+
+<section id="content">
+  
+  <router-outlet></router-outlet>
+
+</section>
+
+<footer>Master en JS con Victor</footer> 
+
+</body>
+
+</html>
